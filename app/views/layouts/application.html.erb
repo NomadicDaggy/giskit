@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Giskit</title>
+    <%= csrf_meta_tags %>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+     <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+     
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <%= csrf_meta_tags%>
+  </head>
+
+  <body>
+  <div class="container">
+    <%= yield %>   
+  </div>
+  </body>
+</html>
